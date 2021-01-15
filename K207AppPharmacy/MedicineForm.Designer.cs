@@ -42,7 +42,6 @@ namespace K207AppPharmacy
             this.nmQuantity = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBarcode = new System.Windows.Forms.TextBox();
-            this.btnAddMedicine = new System.Windows.Forms.Button();
             this.cbReceipt = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dtProDate = new System.Windows.Forms.DateTimePicker();
@@ -51,6 +50,8 @@ namespace K207AppPharmacy
             this.label7 = new System.Windows.Forms.Label();
             this.cmbFirms = new System.Windows.Forms.ComboBox();
             this.rcDesc = new System.Windows.Forms.RichTextBox();
+            this.btnAddMedicine = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMedicineDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmQuantity)).BeginInit();
@@ -222,21 +223,6 @@ namespace K207AppPharmacy
             this.txtBarcode.TabIndex = 9;
             this.txtBarcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
             // 
-            // btnAddMedicine
-            // 
-            this.btnAddMedicine.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnAddMedicine.BackColor = System.Drawing.Color.Teal;
-            this.btnAddMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMedicine.ForeColor = System.Drawing.Color.Cornsilk;
-            this.btnAddMedicine.Location = new System.Drawing.Point(265, 299);
-            this.btnAddMedicine.Name = "btnAddMedicine";
-            this.btnAddMedicine.Size = new System.Drawing.Size(167, 51);
-            this.btnAddMedicine.TabIndex = 25;
-            this.btnAddMedicine.Text = "Add Medicine";
-            this.btnAddMedicine.UseVisualStyleBackColor = false;
-            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
-            // 
             // cbReceipt
             // 
             this.cbReceipt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -321,11 +307,41 @@ namespace K207AppPharmacy
             this.rcDesc.TabIndex = 27;
             this.rcDesc.Text = "";
             // 
+            // btnAddMedicine
+            // 
+            this.btnAddMedicine.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAddMedicine.BackColor = System.Drawing.Color.Teal;
+            this.btnAddMedicine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMedicine.ForeColor = System.Drawing.Color.Cornsilk;
+            this.btnAddMedicine.Location = new System.Drawing.Point(265, 299);
+            this.btnAddMedicine.Name = "btnAddMedicine";
+            this.btnAddMedicine.Size = new System.Drawing.Size(167, 51);
+            this.btnAddMedicine.TabIndex = 25;
+            this.btnAddMedicine.Text = "Add Medicine";
+            this.btnAddMedicine.UseVisualStyleBackColor = false;
+            this.btnAddMedicine.Click += new System.EventHandler(this.btnAddMedicine_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.button1.Location = new System.Drawing.Point(503, 315);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 51);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Add Medicine";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // MedicineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 703);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dtgMedicineDataGrid);
             this.Controls.Add(this.ckTagList);
             this.Controls.Add(this.rcDesc);
@@ -374,7 +390,6 @@ namespace K207AppPharmacy
         private System.Windows.Forms.NumericUpDown nmQuantity;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBarcode;
-        private System.Windows.Forms.Button btnAddMedicine;
         private System.Windows.Forms.CheckBox cbReceipt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtProDate;
@@ -383,5 +398,7 @@ namespace K207AppPharmacy
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbFirms;
         private System.Windows.Forms.RichTextBox rcDesc;
+        private System.Windows.Forms.Button btnAddMedicine;
+        private System.Windows.Forms.Button button1;
     }
 }
